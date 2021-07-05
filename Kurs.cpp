@@ -1,4 +1,3 @@
-﻿#include "pch.h"
 #include <iostream>
 #include <iomanip>
 #include <string>
@@ -301,8 +300,6 @@ void Record(TRAIN TheTrain, List *&Start)
 	while (st != 0) {
 		record_file << st->TheTrain.number << "|" << st->TheTrain.destination
 			<< "|" << st->TheTrain.hours << ":" << st->TheTrain.minutes << ";" << endl;
-		/*record_file << "Поезд номер " << st->TheTrain.number << " прибывает в " << st->TheTrain.destination 
-			<< " в " << st->TheTrain.hours << ":" << st->TheTrain.minutes << endl;*/
 		st = st->next;
 	}
 	cout << endl << "Таблица была сохранена" << endl << endl;
